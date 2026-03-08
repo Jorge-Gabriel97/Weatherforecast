@@ -1,0 +1,77 @@
+/* Container principal da previsão de 5 dias */
+.forecast-container {
+    margin-top: 30px;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Título centralizado */
+.forecast-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* 🌟 A MÁGICA DA LINHA ÚNICA ESTÁ AQUI 🌟 */
+.forecast-list {
+    display: flex; /* Coloca os elementos lado a lado */
+    justify-content: center; /* Centraliza a fileira na tela */
+    align-items: stretch; /* Faz todas as caixas terem a mesma altura */
+    gap: 15px; /* Dá um espacinho de respiração entre cada cartão */
+    flex-wrap: wrap; /* Se a tela for pequena (celular), ele joga pra baixo pra não espremer */
+}
+
+/* O visual de cada um dos 5 cartões (Efeito Vidro) */
+.forecast-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordinha bem sutil */
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column; /* Coloca o texto/imagem do cartão um embaixo do outro */
+    align-items: center; /* Centraliza tudo dentro do cartão */
+    min-width: 130px; /* Garante que o cartão não fique fino demais */
+    flex: 1; /* Faz os cartões dividirem o espaço igualmente */
+    transition: transform 0.3s ease; /* Animação suave... */
+}
+
+/* Efeito de pular um pouquinho quando passa o mouse por cima */
+.forecast-item:hover {
+    transform: translateY(-5px); 
+}
+
+/* Estilizando os textos lá de dentro */
+.forecast-day {
+    font-weight: bold;
+    text-transform: capitalize; /* Deixa a primeira letra do dia maiúscula */
+    margin-bottom: 5px;
+}
+
+.forecast-item img {
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3)); /* Sombra no ícone do clima */
+}
+
+.forecast-description {
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.forecast-temp {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Dando cor para a Mínima e a Máxima */
+.min {
+    color: #aebfd4; /* Azul clarinho */
+}
+
+.max {
+    color: #ffb74d; /* Laranja */
+}

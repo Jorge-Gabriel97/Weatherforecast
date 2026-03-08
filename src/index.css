@@ -1,0 +1,47 @@
+/* Importando a sua Croissant One para os títulos e a Inter para os textos/números */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+    
+    
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+   
+    overflow-x: hidden; 
+}
+
+
+h1, h2, .city-title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400; 
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   BÔNUS: Barra de rolagem personalizada (Premium)
+   ========================================= */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f2027; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4); 
+}

@@ -1,0 +1,94 @@
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.city-title {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    width: 100%;
+    max-width: 1000px;
+    flex-wrap: wrap; 
+}
+
+/* Estilo base idêntico para as 3 caixas */
+.weather-box {
+    background: rgba(30, 45, 60, 0.7); /* Fundo escuro levemente transparente */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px; 
+    min-height: 280px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.weather-box:hover {
+    transform: translateY(-5px);
+}
+
+/* --- Caixa do Centro --- */
+.main-box img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: -10px;
+    filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.5));
+}
+
+.temperature {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+    color: #e0e0e0;
+}
+
+/* --- Caixas da Esquerda e Direita --- */
+.side-box {
+    justify-content: space-evenly; /* Espalha os itens dentro da caixa */
+}
+
+.info-group {
+    text-align: center;
+}
+
+.info-group h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #aebfd4; /* Azul clarinho e suave para o título */
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.info-group .highlight {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 5px 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,134 @@
+/* Container principal */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    /* Fundo degradê escuro super moderno */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+    /* Atualizamos a fonte para combinar com as caixas de baixo */
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+/* Caixa de busca com Efeito de Vidro Refinado */
+.search-container {
+    /* Degradê sutil no fundo para dar volume ao vidro */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 30px;
+    border-radius: 24px; /* Mais arredondado */
+    
+    /* Bordas imitando reflexo de luz */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 400px;
+    
+    /* Animação de entrada (desce suavemente) */
+    animation: slideDown 0.8s ease-out;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.search-container h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Sombra no título */
+}
+
+/* Grupo do input e botão */
+.input-group {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+}
+
+/* Input mais sofisticado */
+input {
+    padding: 16px;
+    border-radius: 12px;
+    border: 2px solid transparent; /* Borda invisível para preparar o efeito de clique */
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.9); /* Branco levemente transparente */
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito ao clicar no input (Focus) */
+input:focus {
+    background: #ffffff;
+    border: 2px solid #ff9800; /* Borda laranja combinando com o botão */
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.3); /* Brilho laranja em volta */
+}
+
+/* Botão Magnético */
+button {
+    padding: 16px 25px;
+    border-radius: 12px;
+    border: none;
+    /* Gradiente laranja para chamar atenção */
+    background: linear-gradient(135deg, #ffb74d, #f57c00); 
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(245, 124, 0, 0.4); /* Sombra colorida */
+}
+
+button:hover {
+    transform: translateY(-2px); /* Efeito de flutuar suave */
+    box-shadow: 0 6px 20px rgba(245, 124, 0, 0.6);
+    background: linear-gradient(135deg, #ffcc80, #ff9800); /* Fica mais claro ao passar o mouse */
+}
+
+button:active {
+    transform: translateY(1px); /* Efeito de afundar ao clicar */
+    box-shadow: 0 2px 10px rgba(245, 124, 0, 0.4);
+}
+
+/* =========================================
+   Responsividade (Para Telas Maiores / PC)
+   ========================================= */
+@media (min-width: 600px) {
+    .search-container {
+        max-width: 550px;
+        padding: 40px;
+    }
+
+    .search-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .input-group {
+        flex-direction: row; 
+    }
+
+    input {
+        flex: 1; 
+    }
+
+    button {
+        width: auto; 
+    }
+}

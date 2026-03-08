@@ -34,4 +34,3 @@ Aplicativo web interativo para consulta de previsão do tempo em tempo real. Des
 ## Contato
 Desenvolvido por Jorge Gabriel.
 * **GitHub:** [https://github.com/Jorge-Gabriel97](https://github.com/Jorge-Gabriel97)
-* **LinkedIn:** [Insira o link do seu perfil aqui]

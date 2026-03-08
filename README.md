@@ -1,16 +1,37 @@
-# React + Vite
+# 🌤️ Previsão do Tempo (Weather Forecast)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Visão Geral
+Aplicativo web interativo para consulta de previsão do tempo em tempo real. Desenvolvido com React e consumindo a OpenWeather API, o projeto apresenta uma interface moderna focada em usabilidade e design responsivo, aplicando conceitos avançados de CSS como Glassmorphism. Este projeto reflete a aplicação prática de consumo de APIs e estruturação de interfaces no caminho do desenvolvimento Full Stack, consolidando conhecimentos acadêmicos em Análise e Desenvolvimento de Sistemas.
 
-Currently, two official plugins are available:
+## Funcionalidades
+* Busca dinâmica de cidades com feedback visual imediato da requisição.
+* Exibição detalhada do clima da região pesquisada, incluindo temperatura atual e descrição das nuvens.
+* Métricas avançadas divididas em painéis: sensação térmica, umidade e pressão atmosférica.
+* Apresentação da velocidade do vento atualizada.
+* Layout totalmente responsivo utilizando a estratégia Mobile First.
+* Design de alto padrão com efeito Glassmorphism (vidro fosco) e tipografia em camadas.
+* Animações suaves de entrada de tela e microinterações nos botões.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
+* **Frontend:** React.js estruturado com Vite.
+* **Estilização:** CSS3 puro (Flexbox, Media Queries, CSS Animations, Backdrop-filter).
+* **Integração:** Axios para requisições HTTP assíncronas.
+* **API de Dados:** OpenWeather API.
 
-## React Compiler
+## Instalação
+1. Clone este repositório no seu computador:
+`git clone https://github.com/Jorge-Gabriel97/Weatherforecast.git`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. Navegue até o diretório do projeto no seu terminal:
+`cd Weatherforecast`
 
-## Expanding the ESLint configuration
+3. Instale as dependências necessárias do Node:
+`npm install`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. Execute o servidor de desenvolvimento:
+`npm run dev`
+
+## Contato
+Desenvolvido por Jorge Gabriel.
+* **GitHub:** [https://github.com/Jorge-Gabriel97](https://github.com/Jorge-Gabriel97)
+* **LinkedIn:** [Insira o link do seu perfil aqui]
